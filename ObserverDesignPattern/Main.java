@@ -8,11 +8,12 @@ public class Main {
     Observer instagram = new Instagram();
 
     twitter.attach_me(forecast);
-//    forecast.notify_observers();
-//    twitter.de_attach_me(forecast);
     instagram.attach_me(forecast);
-    
+
     forecast.set_state(15);
+    System.out.println("-----------------");
+    twitter.de_attach_me(forecast);
+    forecast.set_state(25);
 
 
     }
